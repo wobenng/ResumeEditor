@@ -3,6 +3,10 @@
     <Header />
     <Navigation />
     <SelfIntroduction />
+    <main>
+        <LeftAside />
+        <RightAside />
+    </main>
   </div>
 </template>
 
@@ -10,14 +14,16 @@
 import Header from './components/Header.vue';
 import Navigation from './components/Navigation.vue';
 import SelfIntroduction from './components/SelfIntroduction.vue';
+import LeftAside from './components/LeftAside.vue';
+import RightAside from './components/RightAside.vue';
 
 export default {
   name: 'App',
-  components: {Header,Navigation,SelfIntroduction}
+  components: {Header,Navigation,SelfIntroduction,LeftAside,RightAside}
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 *{
   margin: 0px;
   padding: 0px;
@@ -35,5 +41,9 @@ body{
   color: #2c3e50;
   width: 100%;
   border: 1px solid gray;
+  main{
+    display: flex;
+    flex-direction: row;
+  }
 }
 </style>
