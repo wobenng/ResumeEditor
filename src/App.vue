@@ -16,9 +16,11 @@ import Navigation from './components/Navigation.vue';
 import SelfIntroduction from './components/SelfIntroduction.vue';
 import LeftAside from './components/LeftAside.vue';
 import RightAside from './components/RightAside.vue';
+import store from './store/index'
 
 export default {
   name: 'App',
+  store,
   components: {Header,Navigation,SelfIntroduction,LeftAside,RightAside}
 }
 </script>
@@ -29,6 +31,7 @@ export default {
   padding: 0px;
   box-sizing: border-box;
 }
+
 body{
   padding: 20px;
   width: 100vw;
